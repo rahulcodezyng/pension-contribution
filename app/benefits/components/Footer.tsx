@@ -2,16 +2,19 @@
 import BasicButton from "@/components/Button/BasicButton";
 import Image from "next/image";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between mb-8">
       <BasicButton
         onBtnClick={() => {}}
         btnText="Back"
         startAdornment={
-          <Image src="/icons/previous.svg" width={20} height={20} alt="" />
+          <Image
+            src="/icons/previous.svg"
+            width={20}
+            height={20}
+            alt="previous button"
+          />
         }
         variant="px-4 py-3"
       ></BasicButton>
@@ -19,7 +22,12 @@ const Footer = (props: Props) => {
         onBtnClick={() => {}}
         btnText="Next"
         endAdornment={
-          <Image src="/icons/next.svg" width={20} height={20} alt="" />
+          <Image
+            src="/icons/next.svg"
+            width={20}
+            height={20}
+            alt="next button"
+          />
         }
         variant="px-4 py-3 bg-black text-white"
       ></BasicButton>

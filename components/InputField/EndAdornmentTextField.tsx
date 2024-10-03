@@ -1,15 +1,19 @@
 import React from "react";
 
 type Props = {
+  defaultValue?: string | number;
+  value?: string | number;
   variant?: string;
   type?: string;
   placeholder: string;
-  onChangeHandler: () => void;
+  onChangeHandler: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 const EndAdornmentTextField = ({
+  defaultValue,
+  value,
   variant = "",
-  type,
+  type = "text",
   placeholder,
   onChangeHandler,
 }: Props) => {
@@ -19,9 +23,11 @@ const EndAdornmentTextField = ({
         {placeholder}
       </label>
       <input
+        defaultValue={defaultValue}
+        value={value}
         onChange={onChangeHandler}
-        type={type || "text"}
-        className="w-full pl-3 text-sm pr-10 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+        type={type}
+        className="w-full pl-3 text-sm pr-10 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
         placeholder={placeholder}
       />
       <span className="absolute inset-y-0 text-sm right-0 flex items-center pr-3">

@@ -1,27 +1,20 @@
 import ConfigureContribution from "./components/ConfigureContribution";
 import Footer from "./components/Footer";
 import PensionBenchmark from "./components/PensionBenchmark";
-import PercentageContributionCard from "./components/PercentageContributionCard";
+import PercentageContributionSection from "./components/PercentageContributionSection";
 
 const Page = () => {
   return (
-    <main className="max-w-container m-auto">
-      <ConfigureContribution />
-      <div className="max-w-lg m-auto">
-        <section className="mt-14 mb-6">
-          <h2 className="text-xl xl:text-2xl font-bold">
-            Select the amount you want to contribute
-          </h2>
-          <p className="text-slate-600 text-sm mt-2 mb-6">
-            Choose the pension percentage you want to offer to your employees
-          </p>
-
-          <PercentageContributionCard />
-        </section>
-        <PensionBenchmark />
-        <div>
-          <Footer />
+    <main className="max-w-container m-auto flex flex-col justify-between h-screen">
+      <div>
+        <ConfigureContribution />
+        <div className="max-w-lg m-auto">
+          <PercentageContributionSection />
+          <PensionBenchmark />
         </div>
+      </div>
+      <div className="max-w-lg w-full mx-auto mt-3">
+        <Footer />
       </div>
     </main>
   );
