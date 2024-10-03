@@ -5,6 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #480DBE;
+  --secondary: #CEBAF7;
+  --secondary--light:rgb(233 213 255);
+  --subtitle: rgb(100 116 139);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +21,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, sans-serif;  
 }
 
 @layer utilities {
