@@ -9,7 +9,7 @@ type Props = {
 const ConfigureContribution = ({ variant = "" }: Props) => {
   return (
     <section className={`${variant} mt-8`}>
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between gap-1.5">
         <div>
           <h2 className="text-lg font">Configure Contribution</h2>
           <h6 className="text-sm text-subtitle mt-1">
@@ -26,16 +26,17 @@ const ConfigureContribution = ({ variant = "" }: Props) => {
               alt="close icon"
             />
           }
+          variant="px-4 py-2"
         ></BasicButton>
       </div>
       <div className="grid grid-cols-5 gap-1">
         {[1, 2, 3, 4, 5].map((item, idx) => {
           return (
             <ProgressStepper
-              bgActive="bg-primary"
+              bgActive="bg-primary-light"
               key={item}
               isActive={idx <= 3}
-              variant={`h-1.5`}
+              variant={`h-1`}
             />
           );
         })}

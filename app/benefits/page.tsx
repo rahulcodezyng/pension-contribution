@@ -1,4 +1,4 @@
-import Footer from "./components/Footer";
+import NavigationFooter from "./components/NavigationFooter";
 import PensionBenchmark from "./components/PensionBenchmark";
 import PercentageContributionSection from "./components/PercentageContributionSection";
 import ConfigureContribution from "./components/ConfigureContribution";
@@ -14,7 +14,7 @@ const Page = () => {
         </div>
       </div>
       <div className="max-w-lg w-full mx-auto mt-3">
-        <Footer />
+        <NavigationFooter />
       </div>
     </main>
   );

@@ -2,7 +2,7 @@
 import BasicButton from "@/components/Button/BasicButton";
 import Image from "next/image";
 
-const Footer = () => {
+const NavigationFooter = () => {
   return (
     <div className="flex justify-between mb-8">
       <BasicButton
@@ -16,7 +16,7 @@ const Footer = () => {
             alt="previous button"
           />
         }
-        variant="px-4 py-3"
+        variant="px-8 py-3"
       ></BasicButton>
       <BasicButton
         onBtnClick={() => {}}
@@ -29,10 +29,10 @@ const Footer = () => {
             alt="next button"
           />
         }
-        variant="px-4 py-3 bg-black text-white"
+        variant="px-8 py-3 bg-black text-white"
       ></BasicButton>
     </div>
   );
 };
 
-export default Footer;
+export default NavigationFooter;

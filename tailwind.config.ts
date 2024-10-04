@@ -12,7 +12,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          light: 'var(--primary)',
+          light: 'var(--primary--light)',
           DEFAULT: 'var(--primary)', 
         },
         secondary: {
