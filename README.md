@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pension Contribution
 
-## Getting Started
+Pension Contribution is a Next.js application designed to help users manage their pension contributions effectively. The application provides an intuitive interface for users to track, calculate, and optimize their pension plans.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation Instructions](#installation-instructions)
+- [Folder Structure](#folder-structure)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- User-friendly interface for tracking pension contributions.
+- Calculation tools to help the employees understand their pension options.
+- Benefits page providing detailed information and insights.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## Installation Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To get started with the Pension Contribution project, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   git clone https://github.com/yourusername/pension-contribution.git
 
-## Deploy on Vercel
+2. cd pension-contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. yarn install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. yarn run dev
+
+## Folder Structure
+
+/pension-contribution
+├── app
+│ └── pages
+│ └── benefits
+├── page.tsx
+│ ├── components
+│ ├── page.tsx
+├── components
+├── public
+├── styles
+├── utils
+├──types
+├── .gitignore
+├── next.config.js
+├── package.json
+├── tailwind.config.ts
+└── tsconfig.json
