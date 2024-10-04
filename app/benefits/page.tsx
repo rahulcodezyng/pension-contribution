@@ -1,7 +1,7 @@
-import NavigationFooter from "./components/NavigationFooter";
 import PensionBenchmark from "./components/PensionBenchmark";
 import PercentageContributionSection from "./components/PercentageContributionSection";
 import ConfigureContribution from "./components/ConfigureContribution";
+import NavigateFooter from "./components/NavigateFooter";
 
 const Page = () => {
   return (
@@ -14,7 +14,7 @@ const Page = () => {
         </div>
       </div>
       <div className="max-w-lg w-full mx-auto mt-3">
-        <NavigationFooter />
+        <NavigateFooter />
       </div>
     </main>
   );

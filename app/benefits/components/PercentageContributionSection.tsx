@@ -1,3 +1,6 @@
+"use client"
+
+
 import BasicCard from "@/components/Card/BasicCard";
 import Image from "next/image";
 import MatchedPension from "./MatchedPension";

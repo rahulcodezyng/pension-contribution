@@ -1,3 +1,5 @@
+"use client"
+
 type Props = {
   onBtnClick?: () => void;
   btnText: string;

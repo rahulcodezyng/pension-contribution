@@ -1,12 +1,11 @@
-"use client";
+"use client"
 import BasicButton from "@/components/Button/BasicButton";
 import Image from "next/image";
 
-const NavigationFooter = () => {
+const NavigateFooter = () => {
   return (
     <div className="flex justify-between mb-8">
       <BasicButton
-        onBtnClick={() => {}}
         btnText="Back"
         startAdornment={
           <Image
@@ -19,7 +18,6 @@ const NavigationFooter = () => {
         variant="px-8 py-3"
       ></BasicButton>
       <BasicButton
-        onBtnClick={() => {}}
         btnText="Next"
         endAdornment={
           <Image
@@ -35,4 +33,4 @@ const NavigationFooter = () => {
   );
 };
 
-export default NavigationFooter;
+export default NavigateFooter;
