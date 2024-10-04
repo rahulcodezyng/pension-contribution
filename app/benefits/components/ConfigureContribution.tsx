@@ -1,6 +1,5 @@
-"use client";
 import BasicButton from "@/components/Button/BasicButton";
-import BasicStepper from "@/components/Progress/BasicStepper";
+import ProgressStepper from "@/components/Progress/ProgressStepper";
 import Image from "next/image";
 
 type Props = {
@@ -8,8 +7,6 @@ type Props = {
 };
 
 const ConfigureContribution = ({ variant = "" }: Props) => {
-  const onCancelClick = () => {};
-
   return (
     <section className={`${variant} mt-8`}>
       <div className="flex items-start justify-between">
@@ -29,13 +26,12 @@ const ConfigureContribution = ({ variant = "" }: Props) => {
               alt="close icon"
             />
           }
-          onBtnClick={onCancelClick}
         ></BasicButton>
       </div>
       <div className="grid grid-cols-5 gap-1">
         {[1, 2, 3, 4, 5].map((item, idx) => {
           return (
-            <BasicStepper
+            <ProgressStepper
               bgActive="bg-primary"
               key={item}
               isActive={idx <= 3}

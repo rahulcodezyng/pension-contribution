@@ -1,12 +1,10 @@
-import React from "react";
-
 type Props = {
   bgActive: string;
   variant?: string;
   isActive: boolean;
 };
 
-const BasicStepper = ({ isActive, variant = "", bgActive }: Props) => {
+const ProgressStepper = ({ isActive, variant = "", bgActive }: Props) => {
   return (
     <div
       className={`rounded-full h-2 mt-5 relative ${
@@ -16,4 +14,4 @@ const BasicStepper = ({ isActive, variant = "", bgActive }: Props) => {
   );
 };
 
-export default BasicStepper;
+export default ProgressStepper;

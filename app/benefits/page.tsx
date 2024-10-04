@@ -1,7 +1,7 @@
-import ConfigureContribution from "./components/ConfigureContribution";
 import Footer from "./components/Footer";
 import PensionBenchmark from "./components/PensionBenchmark";
 import PercentageContributionSection from "./components/PercentageContributionSection";
+import ConfigureContribution from "./components/ConfigureContribution";
 
 const Page = () => {
   return (

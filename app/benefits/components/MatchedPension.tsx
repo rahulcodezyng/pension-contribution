@@ -4,7 +4,9 @@ import { useState } from "react";
 import EndAdornmentTextField from "@/components/InputField/EndAdornmentTextField";
 import BasicRangeSlider from "@/components/Slider/BasicRangeSlider";
 
-const max = 10;
+const enum Limits {
+  Max = 10,
+}
 
 const MatchedPension = () => {
   const [sliderValue, setSliderValue] = useState(4);
@@ -16,7 +18,7 @@ const MatchedPension = () => {
   const handlePercentageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = Number(e.target.value);
     if (!isNaN(newValue)) {
-      if (newValue <= max) {
+      if (newValue <= Limits.Max) {
         setSliderValue(newValue);
       }
     }
@@ -34,7 +36,7 @@ const MatchedPension = () => {
       </div>
       <BasicRangeSlider
         onChange={handleSliderChange}
-        maxValue={max}
+        maxValue={Limits.Max}
         value={sliderValue}
       />
     </>
